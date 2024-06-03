@@ -27,42 +27,35 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on. "Starscream", "SwiftEventBus",
         .target(
             name: "iPass2.0NativeiOS",
-           dependencies: ["DocumentReader", "DocumentReaderCore", "RegulaCommon" ,
-            .product(name: "FaceLiveness", package: "amplify-ui-swift-liveness")
-        ],
-
+            dependencies: ["DocumentReader", "DocumentReaderCore", "RegulaCommon",
+                         .product(name: "FaceLiveness", package: "amplify-ui-swift-liveness")
+            ],
             path: "Sources",
             exclude: [
-                                     "PrivateResources" 
-                       ],
-            resources: [
-                .process("Sources/Classes/en.lproj"),
-                .process("Sources/Classes/ca.lproj"),
-                .process("Sources/Classes/hi.lproj"),
-                .process("Classes/en.lproj"),
-                .process("Classes/ca.lproj"),
-                .process("Classes/hi.lproj"),
-                .process("Media.xcassets"),
-            
-                .process("Certificates.bundle"),
-                .process("CertificatesPA.bundle"),
-                .process("CertificatesTA.bundle"),
-                .process("iPass.license"),
-                .process("amplifyconfiguration.json"),
-                .process("awsconfiguration.json"),
-                .process("Certificates"),
-                .process("CertificatesPA"),
-                .process("CertificatesTA"),
-                .process("iPass"),
-                .process("amplifyconfiguration"),
-                .process("awsconfiguration"),
-                .process("ArLocalizable"),
-                .process("ArLocalizable.strings"),
-                
-                
-              
-               //.copy("Resource/DocumentReader.xcframework")
-            ]),
+                "Sources/Classes/en.lproj",
+                "Sources/Classes/ca.lproj",
+                "Sources/Classes/hi.lproj",
+                "Classes/en.lproj",
+                "Classes/ca.lproj",
+                "Classes/hi.lproj",
+                "Media.xcassets",
+
+                "Certificates.bundle",
+                "CertificatesPA.bundle",
+                "CertificatesTA.bundle",
+                "iPass.license",
+                "amplifyconfiguration.json",
+                "awsconfiguration.json",
+                "Certificates",
+                "CertificatesPA",
+                "CertificatesTA",
+                "iPass",
+                "amplifyconfiguration",
+                "awsconfiguration",
+                "ArLocalizable",
+                "ArLocalizable.strings"
+            ]
+        ),
         .binaryTarget(
             name: "DocumentReader",
             path: "DocumentReader.xcframework"),
