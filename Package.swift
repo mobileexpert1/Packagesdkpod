@@ -33,29 +33,29 @@ let package = Package(
 
             path: "Sources",
             
-            resources:  [
-                .process("Sources/Classes/en.lproj"),
-                .process("Sources/Classes/ca.lproj"),
-                .process("Sources/Classes/hi.lproj"),
-                .process("Classes/en.lproj"),
-                .process("Classes/ca.lproj"),
-                .process("Classes/hi.lproj"),
-                .process("Media.xcassets"),
+            resources: [
+                .process("Sources/iPass2.0NativeiOS/Classes/en.lproj"),
+                .process("Sources/iPass2.0NativeiOS/Classes/ca.lproj"),
+                .process("Sources/iPass2.0NativeiOS/Classes/hi.lproj"),
+                .process("Classes/iPass2.0NativeiOS/en.lproj"),
+                .process("Classes/iPass2.0NativeiOS/ca.lproj"),
+                .process("Classes/iPass2.0NativeiOS/hi.lproj"),
+                .process("Classes/iPass2.0NativeiOS/Media.xcassets"),
             
-                .process("Certificates.bundle"),
-                .process("CertificatesPA.bundle"),
-                .process("CertificatesTA.bundle"),
-                .process("iPass.license"),
-                .process("amplifyconfiguration.json"),
-                .process("awsconfiguration.json"),
-                .process("Certificates"),
-                .process("CertificatesPA"),
-                .process("CertificatesTA"),
-                .process("iPass"),
-                .process("amplifyconfiguration"),
-                .process("awsconfiguration"),
-                .process("ArLocalizable"),
-                .process("ArLocalizable.strings"),
+                .process("Classes/iPass2.0NativeiOS/Certificates.bundle"),
+                .process("Classes/iPass2.0NativeiOS/CertificatesPA.bundle"),
+                .process("Classes/iPass2.0NativeiOS/CertificatesTA.bundle"),
+                .process("Classes/iPass2.0NativeiOS/iPass.license"),
+                .process("Classes/iPass2.0NativeiOS/amplifyconfiguration.json"),
+                .process("Classes/iPass2.0NativeiOS/awsconfiguration.json"),
+                .process("Classes/iPass2.0NativeiOS/Certificates"),
+                .process("Classes/iPass2.0NativeiOS/CertificatesPA"),
+                .process("Classes/iPass2.0NativeiOS/CertificatesTA"),
+                .process("Classes/iPass2.0NativeiOS/iPass"),
+                .process("Classes/iPass2.0NativeiOS/amplifyconfiguration"),
+                .process("Classes/iPass2.0NativeiOS/awsconfiguration"),
+                .process("Classes/iPass2.0NativeiOS/ArLocalizable"),
+                .process("Classes/iPass2.0NativeiOS/ArLocalizable.strings"),
                 
                 
               
@@ -70,5 +70,11 @@ let package = Package(
         .binaryTarget(
             name: "RegulaCommon",
             path: "RegulaCommon.xcframework"),
+        .testTarget(
+                  name: "iPass2.0NativeiOSTests",
+                  dependencies: ["iPass2.0NativeiOS"]),
+       
     ]
+    
 )
+   
