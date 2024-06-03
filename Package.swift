@@ -32,6 +32,9 @@ let package = Package(
         ],
 
             path: "Sources",
+            exclude: [
+                                     "PrivateResources" 
+                       ],
             resources: [
                 .process("Sources/Classes/en.lproj"),
                 .process("Sources/Classes/ca.lproj"),
