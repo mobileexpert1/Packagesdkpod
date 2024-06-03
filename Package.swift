@@ -25,45 +25,46 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on. "Starscream", "SwiftEventBus",
-        .target(
-            name: "iPass2.0NativeiOS",
-            dependencies: ["DocumentReader", "DocumentReaderCore", "RegulaCommon",
-                         .product(name: "FaceLiveness", package: "amplify-ui-swift-liveness")
-            ],
-            path: "Sources",
-            exclude: [
-                "Sources/Classes/en.lproj",
-                "Sources/Classes/ca.lproj",
-                "Sources/Classes/hi.lproj",
-                "Classes/en.lproj",
-                "Classes/ca.lproj",
-                "Classes/hi.lproj",
-                "Media.xcassets",
-
-                "Certificates.bundle",
-                "CertificatesPA.bundle",
-                "CertificatesTA.bundle",
-                "iPass.license",
-                "amplifyconfiguration.json",
-                "awsconfiguration.json",
-                "Certificates",
-                "CertificatesPA",
-                "CertificatesTA",
-                "iPass",
-                "amplifyconfiguration",
-                "awsconfiguration",
-                "ArLocalizable",
-                "ArLocalizable.strings"
-            ]
-        ),
-        .binaryTarget(
-            name: "DocumentReader",
-            path: "DocumentReader.xcframework"),
-        .binaryTarget(
-            name: "DocumentReaderCore",
-            path: "DocumentReaderCore.xcframework"),
-        .binaryTarget(
-            name: "RegulaCommon",
-            path: "RegulaCommon.xcframework"),
-    ]
-)
+      
+              .target(
+                   name: "iPass2.0NativeiOS",
+                   dependencies: ["DocumentReader", "DocumentReaderCore", "RegulaCommon"],
+                   exclude: [
+                    "Sources/Classes/en.lproj",
+                    "Sources/Classes/ca.lproj",
+                    "Sources/Classes/hi.lproj",
+                    "Classes/en.lproj",
+                    "Classes/ca.lproj",
+                    "Classes/hi.lproj",
+                    "Media.xcassets",
+                    
+                    "Certificates.bundle",
+                    "CertificatesPA.bundle",
+                    "CertificatesTA.bundle",
+                    "iPass.license",
+                    "amplifyconfiguration.json",
+                    "awsconfiguration.json",
+                    "Certificates",
+                    "CertificatesPA",
+                    "CertificatesTA",
+                    "iPass",
+                    "amplifyconfiguration",
+                    "awsconfiguration",
+                    "ArLocalizable",
+                    "ArLocalizable.strings"
+                   ], sources: [
+                    "Sources",
+                    "Classes"
+                   ]
+               ),
+              .binaryTarget(
+                   name: "DocumentReader",
+                   path: "DocumentReader.xcframework"),
+              .binaryTarget(
+                   name: "DocumentReaderCore",
+                   path: "DocumentReaderCore.xcframework"),
+              .binaryTarget(
+                   name: "RegulaCommon",
+                   path: "RegulaCommon.xcframework"),
+           ]
+       )
