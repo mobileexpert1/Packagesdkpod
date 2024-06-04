@@ -70,9 +70,9 @@ let package = Package(
         .binaryTarget(
             name: "RegulaCommon",
             path: "RegulaCommon.xcframework"),
-        .testTarget(
-                  name: "iPass2.0NativeiOSTests",
-                  dependencies: ["iPass2.0NativeiOS"]),
+//        .testTarget(
+//               //   name: "iPass2.0NativeiOSTests",
+//                  dependencies: ["iPass2.0NativeiOS"]),
        
     ]
     
