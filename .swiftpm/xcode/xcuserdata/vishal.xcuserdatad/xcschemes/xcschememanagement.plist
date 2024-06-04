@@ -105,21 +105,21 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>6</integer>
 		</dict>
 		<key>SQLite (Playground) 4.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>7</integer>
 		</dict>
 		<key>SQLite (Playground) 5.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>8</integer>
 		</dict>
 		<key>SQLite (Playground) 6.xcscheme</key>
 		<dict>
@@ -174,6 +174,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>Packagesdkpod-main</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>iPass2.0Native-main 2</key>
 		<dict>
 			<key>primary</key>
