@@ -9,13 +9,13 @@ let package = Package(
     platforms: [
        .macOS(.v10_13), .iOS(.v14),
     ],
-    products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
-        .library(
-            name: "iPass2.0NativeiOS",
-            targets: ["iPass2.0NativeiOS"]),
-           // .library(name: "DocumentReader", targets: ["DocumentReader.xcframework"])
-    ],
+//    products: [
+//        // Products define the executables and libraries a package produces, and make them visible to other packages.
+//        .library(
+//            name: "iPass2.0NativeiOS",
+//            targets: ["iPass2.0NativeiOS"]),
+//           // .library(name: "DocumentReader", targets: ["DocumentReader.xcframework"])
+//    ],
     dependencies: [
 //        .package(url: "https://github.com/cesarferreira/SwiftEventBus.git", from: "5.1.0"),
         .package(url: "https://github.com/aws-amplify/amplify-ui-swift-liveness", from: "1.2.11")
